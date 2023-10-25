@@ -1,6 +1,7 @@
 import FunctionCalling as f
 import time as t
 import sys
+import random as r
 '''
 - we can call some builtin module, which are following
  ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BaseExceptionGroup', 'BlockingIOError', 
@@ -38,3 +39,10 @@ print(sys.argv)
 print(sys.version)
 print(sys.prefix)
 
+print(r.choice(range(1000,10000)))
+
+##using shuffle
+li=[1,2,23,4,53]
+print(li) ## output: [1, 2, 23, 4, 53]
+r.shuffle(li)
+print(li) ## output: [53, 1, 4, 23, 2]
