@@ -1,0 +1,6 @@
+f=open("/Users/sakshamsaxena/PycharmProjects/TutPyspark/sourcedata/orders.txt")
+print(type(f))
+# print(f.read())
+print("--- printing the string ---")
+s=f.read()
+print(s)
