@@ -1,0 +1,5 @@
+2023-10-28 19:52:27,206 - root - ERROR - Logging error posix -->> 
+Traceback (most recent call last):
+  File "/Users/sakshamsaxena/PycharmProjects/TutPyspark/pythonbasic/logging-all/LoggingIntegrationExcep.py", line 4, in <module>
+    print(sal)
+NameError: name 'sal' is not defined
