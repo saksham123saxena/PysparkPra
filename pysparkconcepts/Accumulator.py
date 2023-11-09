@@ -14,3 +14,5 @@ print(counter1)
 print(type(counter1))
 rdd.foreach(countingIteration)
 print(counter1)
+
+
