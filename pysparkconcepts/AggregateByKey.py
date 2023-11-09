@@ -42,6 +42,7 @@ zero_val=0
 
 aggr_rdd=rdd1.aggregateByKey(zero_val,seq_op,comp_op)
 
+l=input()
 ##printing the result of final rdd
 for x in aggr_rdd.collect():
     print(x)
