@@ -34,25 +34,30 @@ df.show()
 
 '''
 
-print("now, will use custom row class!!")
-Person=Row("name","age") # here, entities are fixed
-p1=Person("hello1",1)
-p2=Person("hello2",2)
-print(p1)
-print(type(p2))
+# print("now, will use custom row class!!")
+# Person=Row("name","age") # here, entities are fixed
+# p1=Person("hello1",1)
+# p2=Person("hello2",2)
+# print(p1)
+# print(type(p2))
+#
+# l=[p1,p2]
+# rdd=spark.sparkContext.parallelize(l)
+# print("printing the values of rdd!!")
+# for ele in rdd.collect():
+#     print(ele)
+#
+# print("creating the dataframe")
+# #df=spark.createDataFrame(rdd)
+# sh=StructType([
+#     StructField('name',StringType(),True),
+#     StructField('time',IntegerType(),True)
+# ])
+# df=spark.createDataFrame(rdd,schema=sh)
+# df.printSchema()
+# df.show()
 
-l=[p1,p2]
-rdd=spark.sparkContext.parallelize(l)
-print("printing the values of rdd!!")
-for ele in rdd.collect():
-    print(ele)
 
-print("creating the dataframe")
-#df=spark.createDataFrame(rdd)
-sh=StructType([
-    StructField('name',StringType(),True),
-    StructField('time',IntegerType(),True)
-])
-df=spark.createDataFrame(rdd,schema=sh)
-df.printSchema()
-df.show()
+import os
+import sys
+print(os.path.dirname(sys.executable))
