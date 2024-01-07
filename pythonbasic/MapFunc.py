@@ -33,6 +33,10 @@ frameworks=["spark","iceberg","flink"]
 li=map(str.upper,frameworks)
 print(list(map(str.upper,frameworks)))
 
+
+id
+handle
+encrypted_phone
 str_arr=["a","b","c","d","e","f"]
 num_arr=[1,2,3,4,5]
 print(list(map(lambda x,y : (x,y), str_arr,num_arr)))
