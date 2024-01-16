@@ -1,4 +1,4 @@
-from pyspark.sql import SparkSession
+from pyspark import SparkSession
 spark=SparkSession.builder.master("local").appName("SamplingTransformation").getOrCreate()
 
 rdd=spark.sparkContext.parallelize(range(100),4)

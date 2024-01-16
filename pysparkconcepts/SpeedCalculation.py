@@ -1,6 +1,6 @@
 from time import time
 
-from pyspark.sql import SparkSession
+from pyspark import SparkSession
 spark=SparkSession.builder.master("local").appName("CalculatingSpeedOfSpark").getOrCreate()
 
 def speedCal():

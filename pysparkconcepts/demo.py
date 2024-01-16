@@ -1,6 +1,6 @@
-from pyspark.sql import SparkSession
+from pyspark import SparkSession
 # from pyspark.sql.types import StructType,StructField, StringType
-from pyspark.sql.types import StructType,StructField,StringType,IntegerType,LongType
+from pyspark import StructType,StructField, LongType
 spark=SparkSession.builder.master("local").appName("GroupByKey").getOrCreate()
 '''
 deptSchema = StructType([       

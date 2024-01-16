@@ -1,5 +1,5 @@
 import Common as s
-from pyspark.sql.functions import col,to_date
+from pyspark import col,to_date
 
 
 df=s.spark.read.load("/Users/sakshamsaxena/PycharmProjects/TutPyspark/sourcedata/input1.parquet",

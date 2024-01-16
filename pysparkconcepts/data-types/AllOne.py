@@ -1,5 +1,4 @@
-from pyspark.sql import SparkSession
-from pyspark.sql.types import *
+from pyspark import *
 
 spark=SparkSession.builder.master("local").appName("DataTypesPysaprk").getOrCreate()
 

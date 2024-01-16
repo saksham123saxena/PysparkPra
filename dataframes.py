@@ -1,4 +1,4 @@
-from pyspark.sql import SparkSession
+from pyspark import SparkSession
 sc=SparkSession.builder.master("local").appName("PysparkTut").getOrCreate()
 rd=sc.sparkContext.parallelize([1,2,3])
 print(rd)
