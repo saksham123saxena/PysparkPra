@@ -1,4 +1,4 @@
-from pyspark.sql import SparkSession
+from pyspark import SparkSession
 from operator import add
 
 spark=SparkSession\

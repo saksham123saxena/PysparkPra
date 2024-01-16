@@ -1,4 +1,4 @@
-from pyspark.sql import SparkSession
+from pyspark import SparkSession
 
 def lowerCaseConverter(str):
     return str.lower()

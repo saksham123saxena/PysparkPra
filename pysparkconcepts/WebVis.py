@@ -1,4 +1,4 @@
-from pyspark.sql import SparkSession
+from pyspark import SparkSession
 sc=SparkSession.builder.master("local").appName("WebVisualization").getOrCreate()
 
 

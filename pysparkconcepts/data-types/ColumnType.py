@@ -1,7 +1,4 @@
-from pyspark.sql import SparkSession
-from pyspark.sql import Row
-from pyspark.sql.types import *
-from pyspark.sql.functions import *
+from pyspark import *
 spark=SparkSession.builder.master("local").appName("ColumnObject").getOrCreate()
 
 data=[Row(name="hello",type=1),Row(name="hello",type=2),Row(name="hello",type=3),

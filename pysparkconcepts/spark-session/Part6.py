@@ -107,9 +107,8 @@ select convertUDF("i am pyspark developer") as newCol
 """).show()
 
 '''
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, udf
-from pyspark.sql.types import StringType,IntegerType
+from pyspark import udf
+from pyspark import IntegerType
 import Common as c
 # using lambda function
 func= udf(lambda x:len(x),IntegerType())

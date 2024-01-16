@@ -1,6 +1,4 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import *
-from pyspark.sql.types import *
 from datetime import date, datetime
 import datetime
 import subprocess

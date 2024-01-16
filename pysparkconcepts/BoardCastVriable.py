@@ -1,4 +1,4 @@
-from pyspark.sql import SparkSession
+from pyspark import SparkSession
 sc=SparkSession.builder.master("local").appName("Broad_Casting_of_Variable").getOrCreate()
 
 day={"sun":"Sunday","mon":"Monday","tus":"tuesday"}

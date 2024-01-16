@@ -1,5 +1,4 @@
 import json
-from uuid import uuid4
 from confluent_kafka import Producer
 
 from pyspark.sql import SparkSession
